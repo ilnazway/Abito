@@ -1,13 +1,17 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #0A143A;
+  color: #0a143a;
 }
 
-.header {
+.container {
   max-width: 1146px;
   margin: auto;
-  padding: 30px;
+}
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .navbar {
@@ -53,12 +57,12 @@ body {
 }
 
 .button-primary {
-  background: #256EEB;
+  background: #256eeb;
   border-radius: 5px;
   color: #ffffff;
 }
 .search-panel {
-  background: #256EEB;
+  background: #256eeb;
   height: 50px;
   padding: 3px;
   box-sizing: border-box;
@@ -74,7 +78,7 @@ body {
   border-radius: 5px;
 }
 .search-button {
-  background: #256EEB;
+  background: #256eeb;
   border: none;
   color: #ffffff;
   padding-left: 20px;
@@ -84,4 +88,117 @@ body {
 }
 .search-button-text {
   margin-left: 5px;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-gap: 30px;
+}
+.card-image {
+  width: 264px;
+  height: 178px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* если не помещаются, то переносятся */
+  /* justify-content: flex-start; */
+}
+.card {
+  margin-bottom: 20px;
+}
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256eeb;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  max-width: 220px;
+}
+.like {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-link {
+  text-decoration: none;
+}
+.card-price {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  display: block;
+}
+.card-text {
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.page-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #0a143a;
+  margin-bottom: 23px;
+  margin-top: 0;
+}
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.service {
+  margin-bottom: 25px;
+  max-width: 231px;
+}
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0a143a;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.service-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer {
+  margin-top: 18px;
+}
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin: 0;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: #0a143a;
+  text-decoration: none;
+  margin-bottom: 5px;
+  display: inline-block;
 }
